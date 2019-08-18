@@ -6,4 +6,5 @@ def square_array(array)
     new_array[index] = number * number
     index += 1
   end
+  return new_array
 end
