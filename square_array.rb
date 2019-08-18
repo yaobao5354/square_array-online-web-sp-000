@@ -1,6 +1,7 @@
+require 'pry'
 def square_array(array)
-  array.collect do |number|
-    number * number 
-  end 
-  return array
+  array = [1,2,3]
+  binding.pry
+  array.collect{|number| number * number}
+  binding.pry
 end
