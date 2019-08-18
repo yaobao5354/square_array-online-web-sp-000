@@ -1,10 +1,6 @@
 def square_array(array)
-  new_square_array = []
-  index = 0
-  array.each do |number|
-    square = number * number 
-    new_square_array[index] = square
-    index += 1 
+  array.collect do |number|
+    number * number 
   end 
-  return new_square_array
+  return array
 end
